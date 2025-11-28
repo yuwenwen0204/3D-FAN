@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>奥特曼打怪兽</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div id="ui">
+    <div id="menu" class="overlay">
+      <h1>奥特曼打怪兽</h1>
+      <p>方向键移动，↑ 跳跃，X 攻击，P 暂停</p>
+      <button id="startBtn">开始游戏</button>
+    </div>
+    <div id="hud" class="hud">
+      <div class="stat">生命值: <span id="hp">100</span></div>
+      <div class="stat">分数: <span id="score">0</span></div>
+      <div class="stat">关卡: <span id="level">1</span></div>
+    </div>
+    <div id="gameover" class="overlay hidden">
+      <h2>游戏结束</h2>
+      <p>分数: <span id="finalScore">0</span></p>
+      <button id="restartBtn">再来一次</button>
+    </div>
+  </div>
+  <canvas id="game"></canvas>
+  <div id="controls" class="controls">
+    <button id="leftBtn">←</button>
+    <button id="jumpBtn">↑</button>
+    <button id="rightBtn">→</button>
+    <button id="attackBtn">X</button>
+  </div>
+  <script src="main.js"></script>
+</body>
+<style>
+</style>
+
+</html>
